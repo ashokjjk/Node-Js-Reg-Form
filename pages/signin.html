@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-<title>Signup using Node JS</title>
+<title>Sign-in using Node JS</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
@@ -85,14 +85,10 @@
 </head>
 <body>
 <div class="signup-form">
-    <form action="../controller/register" method="POST">
-		<h2>Sign Up</h2>
+    <form action="../controller/signin" method="POST">
+		<h2>Sign in</h2>
 		<p>Using NodeJS & MongoDb.</p>
-		<hr>
-        <div class="form-group">
-			<label>Username</label>
-        	<input type="text" class="form-control" name="username" required="required">
-        </div>
+		<hr>        
         <div class="form-group">
 			<label>Email Address</label>
         	<input type="email" class="form-control" name="email" required="required">
@@ -100,17 +96,12 @@
 		<div class="form-group">
 			<label>Password</label>
             <input type="password" class="form-control" name="password" required="required">
-        </div>
-		<div class="form-group">
-			<label>Confirm Password</label>
-            <input type="password" class="form-control" name="confirm_password" required="required">
-        </div>
+        </div>		
 		<div class="form-group">
             <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
-        </div>
-		<p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a></p>
+        </div>		
     </form>
-	<div class="text-center">Already have an account? <a href="signin.html">Login here</a></div>
+	<div class="text-center">Don't have an account? <a href="/">Signup here</a></div>
 </div>
 </body>
 </html> 

@@ -42,9 +42,9 @@ app.get('/signin.html', function (req, res) {
 app.post('/controller/signin', function (req, res) {
     var unId = req.body.email;
     var pwd = req.body.password;
-    var verify = dbService.auth(unId, pwd);
-    res.send(verify);
+    dbService.auth(unId, pwd);
+    res.send("verification done check console");
+    return res.end();
 })
-
 
 app.listen(8085)
